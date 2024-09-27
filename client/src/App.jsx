@@ -23,6 +23,7 @@ import { action as loginAction } from "./pages/Login";
 import { store } from "./store";
 //import { loader as homeLoader } from "./pages/HomeLayout";
 import { loader as foodLoader } from "./pages/Foods";
+import { loader as singleFoodLoader } from "./pages/SingleFood";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,8 @@ const router = createBrowserRouter([
       {
         path: "foods/:id",
         element: <SingleFood />,
+        errorElement: <Error />,
+        loader: singleFoodLoader,
       },
       {
         path: "blog",

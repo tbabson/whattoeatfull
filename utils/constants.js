@@ -27,11 +27,4 @@ export const SORT_BY = {
     DESCENDING: 'z-a',
 }
 
-export const foodPrice = (price) => {
-    const nairaAmount = new Intl.NumberFormat('en-NG', {
-        style: 'currency',
-        currency: 'NGN',
-    }).format((price).toFixed(2));
-    return nairaAmount;
-};
 

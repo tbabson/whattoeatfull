@@ -52,6 +52,7 @@ text-transform: capitalize;
 }
 
 .ingredients h5{
+font-size: 1rem;
 font-weight: 600;
 margin-bottom: 0.3rem;
 color: var(--secondary-800);
@@ -68,6 +69,7 @@ text-transform: lowercase;
 }
 
 .prepare h5{
+font-size: 1rem;
 font-weight: 600;
 margin-bottom: 0.3rem;
 color: var(--secondary-800);

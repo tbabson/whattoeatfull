@@ -13,7 +13,7 @@ router.route('/').get(getAllFoods).post(validateFoodInput, authenticateUser, aut
 
 router.route('/uploadImage').post(authenticateUser, authorizePermissions("admin"), uploadFoodImage)
 
-router.route('/:id').get(validateIdParam, authenticateUser, getFood).patch(validateIdParam, authenticateUser, authorizePermissions("admin"), updateFood).delete(validateIdParam, authenticateUser, authorizePermissions("admin"), deleteFood)
+router.route('/:id').get(validateIdParam, getFood).patch(validateIdParam, authenticateUser, authorizePermissions("admin"), updateFood).delete(validateIdParam, authenticateUser, authorizePermissions("admin"), deleteFood)
 
 router.route('/:id/reviews').get(getSingleFoodReviews);
 
