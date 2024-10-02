@@ -29,7 +29,14 @@ export const createFood = async (req, res) => {
 // GET SINGLE FOOD CONTROLLER
 export const getFood = async (req, res) => {
     // note you can write the code in a single line, as seen below.
-    const food = await Food.findById(req.params.id).populate('reviews')
+    const food = await Food.findById(req.params.id)
+        .populate({
+            path: 'reviews',
+            populate: {
+                path: 'user',
+                select: 'fullName',
+            },
+        });
 
     res.status(StatusCodes.OK).json({ food })
 }
