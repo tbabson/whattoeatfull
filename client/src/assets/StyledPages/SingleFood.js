@@ -39,7 +39,7 @@ animation: fadeIn 1s;
 
 .mealAndCountry{
     display: flex;
-    color: var(--secondary-700);
+    color: var(--grey-800);
     font-weight: 600;
     gap: 8px;
     font-size: 1rem;
@@ -53,14 +53,12 @@ animation: fadeIn 1s;
 }
 
 .averageRating{
-    color: var(--secondary-700);
-    font-weight: 600;
+    color: var(--grey-800);
+    font-weight: 400;
     font-size: 1rem;
-    letter-spacing: 1px;
 }
 
 span p{
-    color: var(--black);
     font-weight:300;
     letter-spacing: 0;
 }
@@ -84,7 +82,7 @@ text-transform: capitalize;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     color: var(--primary-900);
-line-height: 40px;
+line-height: 30px;
 text-transform: capitalize;
 }
 
@@ -102,7 +100,7 @@ text-transform: capitalize;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     color: var(--primary-900);
-line-height: 40px;
+line-height: 30px;
 text-transform: capitalize;
 }
 
