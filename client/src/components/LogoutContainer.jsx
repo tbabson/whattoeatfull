@@ -3,12 +3,12 @@ import Wrapper from "../assets/StyledPages/LogoutContainer";
 import { useEffect, useState } from "react";
 //import { useHomeLayoutContext } from "../pages/HomeLayout";
 import { useDispatch, useSelector } from "react-redux";
-import { logoutUser } from "../features/user/userSlice";
+import { logoutUser } from "../features/user/logoutSlice";
 import { useNavigate, Link } from "react-router-dom";
 import customFetch from "../utils/customFetch";
 
 const LogoutContainer = () => {
-  const user = useSelector((state) => state.userState.user);
+  const user = useSelector((state) => state.userLogOutState.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 

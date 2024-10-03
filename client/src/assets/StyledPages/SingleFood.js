@@ -64,7 +64,7 @@ span p{
 }
 
 hr.hr1{
-    border-top: 0.5px solid;
+    border-top: 1px solid;
     color: var(--grey-800);
 margin-top: 1rem;
 }

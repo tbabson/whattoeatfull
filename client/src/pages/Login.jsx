@@ -3,7 +3,7 @@ import Wrapper from "../assets/StyledPages/RegisterAndLoginPage";
 import { FormRow, Logo, Footer } from "../components";
 import customFetch from "../utils/customFetch";
 import { toast } from "react-toastify";
-import { loginUser } from "../features/user/userSlice";
+import { loginUser } from "../features/user/logoutSlice";
 import { useDispatch } from "react-redux";
 
 export const action =
